@@ -842,7 +842,7 @@ def get_max_memory(max_memory: Optional[Dict[Union[int, str], Union[int, str]]] 
     """
     import psutil
 
-    limitGpuMemory = 0.5
+    limitGpuMemory = 0.75
 
     if max_memory is None:
         if not (torch.cuda.is_available() or is_npu_available() or is_xpu_available()):
